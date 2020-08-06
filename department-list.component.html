@@ -1,0 +1,14 @@
+<div style="text-align: center;">
+    <h1> Routing and Navigation </h1></div>
+  
+  <nav>
+      <button><a routerLink='/department' routerLinkActive="active">Department</a></button>
+    
+      <button><a routerLink='/employee' routerLinkActive="active">Employee</a></button>
+      <button><a routerLink='/valform' routerLinkActive="active">Form</a></button>
+      <label for='input1'>Feedback : </label>
+        <input type='text' name='' id="" placeholder="Type your feedbacks here..." [(ngModel)]="todovalue"/>
+        <button routerLink='/valform' (onclick)= 'addvalue()'>SUBMIT</button>
+    
+      </nav>
+  <router-outlet></router-outlet>
